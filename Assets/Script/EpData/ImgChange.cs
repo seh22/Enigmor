@@ -22,8 +22,16 @@ public class ImgChange : MonoBehaviour
 
             if (epImg != null && ImgSprite != null)
             {
-                ImgSprite.sprite = epImg.epImage[imgIndex];
+                Imge(imgIndex);
+                //ImgSprite.sprite = epImg.epImage[imgIndex];
             }
         }
     }
+
+    public void Imge(int imgIndex)
+    {
+        ImgSprite.sprite = epImg.epImage[imgIndex];
+    }
+
+
 }
